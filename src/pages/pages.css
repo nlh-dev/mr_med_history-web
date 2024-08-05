@@ -1,0 +1,24 @@
+.start-pages{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #1c1b6b;
+}
+
+.start-pages .user-info{
+    display: flex;
+    align-items: center;
+}
+
+.start-pages .user-info .fullname{
+    margin-right: 7px;
+}
+
+.user-type{
+    opacity: 50%;
+    color: black;
+}
+
+hr{
+    margin-top: 10px;
+}
