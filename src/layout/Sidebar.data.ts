@@ -19,15 +19,15 @@ export const SidebarMenu: ISidebar[] = [
         tipo: 'link'
     },
     {
-        title: 'Historias Médicas',
-        redirecTo: 'historias_medicas',
-        icon: 'fa-solid fa-book-medical',
-        tipo: 'link'
-    },
-    {
         title: 'Pacientes',
         redirecTo: 'pacientes',
         icon: 'fa-solid fa-person-half-dress',
+        tipo: 'link'
+    },
+    {
+        title: 'Historias Médicas',
+        redirecTo: 'historias_medicas',
+        icon: 'fa-solid fa-book-medical',
         tipo: 'link'
     },
     {

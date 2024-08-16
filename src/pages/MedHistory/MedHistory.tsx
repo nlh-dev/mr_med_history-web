@@ -16,6 +16,7 @@ export const MedHistory = () =>{
                 </div>
             </div>
             <hr />
+
         </div>
     </div>
     )

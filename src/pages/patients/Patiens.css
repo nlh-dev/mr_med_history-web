@@ -1,0 +1,72 @@
+.add_patients{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    font-size: 15px;
+    margin: 12px 0;
+}
+
+.add_patients button{
+    width: 13rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-style: none;
+    background-color: #1c1b6b;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 15px;
+    font-size: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.250);
+}
+
+.fa-circle-plus{
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+
+.content-table{
+    border-collapse: collapse;
+    font-size: 1em;
+    width: 100%;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.250);
+}
+
+
+.content-table thead tr{
+    background: #1c1b6b;
+    height: 50px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+.content-table th,
+.content-table td{
+    padding: 12px 15px;
+}
+
+.content-table tbody tr{
+    text-align: center;
+    border-bottom: 1px solid #dddddd;
+}
+
+.content-table tbody tr:nth-of-type(even){
+    background-color: #f3f3f3;
+}
+
+
+a i{
+    width: 45px;
+}
+
+.add_button{
+    background-color: #1B6B45;
+    border-radius: 10px;
+}
