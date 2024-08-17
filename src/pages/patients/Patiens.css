@@ -7,6 +7,39 @@
     margin: 12px 0;
 }
 
+.search_field{
+    width: 25rem;
+    height: 3rem;
+    margin-right: 25px;
+    outline: none;
+    background-color: #D9D9D9;
+    border-radius: 15px;
+    display: grid;
+    padding: 0 .5rem;
+    transition: 0.3s;
+    border: 2px solid transparent;
+}
+
+.search_field:hover{
+    border-color: #1c1b6b;
+}
+
+.add_patients input{
+    background: none;
+    outline: none;
+    border: none;
+    line-height: 1;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #333;
+    text-transform: uppercase;
+
+}
+
+.add_patients input:hover{
+    border-color: #1c1b6b;
+}
+
 .add_patients button{
     width: 13rem;
     height: 3rem;
@@ -61,12 +94,79 @@
     background-color: #f3f3f3;
 }
 
+.buttons{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
 
-a i{
-    width: 45px;
+.buttons a{
+    cursor: pointer;
+}
+
+.buttons i{
+    font-size: 20px;
 }
 
 .add_button{
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
     background-color: #1B6B45;
-    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.add_button:hover{
+    background-color: #245a41;
+}
+
+.info_button{
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    background-color: #2F9FA6;
+    transition: 0.3s
+}
+
+.info_button:hover{
+    background-color: #35878d;
+}
+
+.edit_button{
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    background-color: #DAB533;
+    transition: 0.3s
+}
+
+.edit_button:hover{
+    background-color: #c7a93d;
+}
+
+.delete_button{
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    background-color: #C32121;
+    transition: 0.3s
+}
+
+.delete_button:hover{
+    background-color: #9e2d2d;
 }
