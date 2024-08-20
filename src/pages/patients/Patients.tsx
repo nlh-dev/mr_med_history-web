@@ -1,6 +1,6 @@
-import { IPatients, patients, } from './Patients.data'
-import './Patiens.css'
+import { TableComponent } from '../../components/tables/TableComponent'
 import '../pages.css'
+import './Patiens.css'
 
 export const Patients = () => {
 
@@ -25,58 +25,10 @@ export const Patients = () => {
                         <input type="text" placeholder='Buscar Paciente.......' />
                     </div>
                     <button>
-                        <i className="fa-solid fa-circle-plus" /> AÑADIR PACIENTE
+                        <i className="add-icon fa-solid fa-circle-plus" /> AÑADIR PACIENTE
                     </button>
                 </div>
-                <table className='content-table'>
-                    <thead>
-                        <tr>
-                            <th>NOMBRE Y APELLIDO</th>
-                            <th>CÉDULA DE IDENTIDAD</th>
-                            <th>NÚMERO DE TELEFONO</th>
-                            <th>CÓDIGO DE HISTORIA</th>
-                            <th>OPCIONES</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {patients.map((patient: IPatients) => (
-                            <tr>
-                                <td>{patient.full_name}</td>
-                                <td>{patient.id_number}</td>
-                                <td>{patient.phone_number}</td>
-                                <td>{patient.mhistory_id}</td>
-                                <td>
-                                    <div className="buttons">
-                                        
-                                        <div className='add_button'>
-                                            <a>
-                                                <i className={patient.add_button} />
-                                            </a>
-                                        </div>
-
-                                        <div className='info_button'>
-                                            <a>
-                                                <i className={patient.info_button} />
-                                            </a>
-                                        </div>
-
-                                        <div className='edit_button'>
-                                            <a>
-                                                <i className={patient.edit_button} />
-                                            </a>
-                                        </div>
-
-                                        <div className='delete_button'>
-                                            <a>
-                                                <i className={patient.delete_button} />
-                                            </a>
-                                        </div>
-                                    </div>
-                                </td>
-                            </tr>
-                        ))}
-                    </tbody>
-                </table>
+                <TableComponent />
             </div>
         </div>
     )
