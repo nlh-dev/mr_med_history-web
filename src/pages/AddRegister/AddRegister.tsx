@@ -1,5 +1,3 @@
-
-
 import '../pages.css'
 import './AddRegister.css'
 

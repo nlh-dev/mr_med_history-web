@@ -4,24 +4,7 @@
     justify-content: end;
     align-items: center;
     font-size: 15px;
-    margin: 12px 0;
-}
-
-.search_field{
-    width: 25rem;
-    height: 3rem;
-    margin-right: 25px;
-    outline: none;
-    background-color: #D9D9D9;
-    border-radius: 15px;
-    display: grid;
-    padding: 0 .5rem;
-    transition: 0.3s;
-    border: 2px solid transparent;
-}
-
-.search_field:hover{
-    border-color: #1c1b6b;
+    margin: 5px 0;
 }
 
 .add_patients input{
@@ -53,6 +36,7 @@
     border-radius: 15px;
     font-size: 15px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.250);
+    margin-left: 15px;
 }
 
 .add-icon{

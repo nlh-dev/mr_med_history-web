@@ -28,7 +28,6 @@ export const Patients = () => {
                         <i className="add-icon fa-solid fa-circle-plus" /> AÑADIR PACIENTE
                     </button>
                 </div>
-                <TableComponent />
             </div>
         </div>
     )
