@@ -1,9 +1,29 @@
+import { useEffect, useState } from 'react'
 import { TableComponent } from '../../components/tables/TableComponent'
 import '../pages.css'
 import './Patiens.css'
+import { dataPatients, IPatients, patientsColumns } from './Patients.data'
 
 export const Patients = () => {
 
+    const [columns, setColumns] = useState(patientsColumns);
+    const user: string = 'admin'
+
+    useEffect(()=> {
+        if(user === 'ADMIN'){
+            const columnsFilter = patientsColumns.filter(col => col.header !== 'OPCIONES');
+            setColumns(columnsFilter);
+        }
+    },[]);
+
+    const getDATAtABLE = (icon: string, data: IPatients) => {
+        console.log(icon);
+        console.log(data);
+        if(icon == 'agregar'){
+            console.log(data);
+
+        }
+    }
 
     return (
         <div className='pages-index'>
@@ -28,6 +48,7 @@ export const Patients = () => {
                         <i className="add-icon fa-solid fa-circle-plus" /> AÑADIR PACIENTE
                     </button>
                 </div>
+                <TableComponent columns={columns} dataTable={dataPatients} returndata={getDATAtABLE}/>
             </div>
         </div>
     )

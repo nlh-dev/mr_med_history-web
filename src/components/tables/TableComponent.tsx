@@ -1,53 +1,41 @@
-import { ITableComponent, tablecomponent } from './TableComponent.data'
+import { ITable } from './TableComponent.data'
 import './TableComponent.css'
+import { FC } from 'react'
 
-export const TableComponent = () => {
+export const TableComponent: FC<ITable> = ({ columns, dataTable, returndata }) => {
+
+
     return (
         <table className='content-table'>
             <thead>
                 <tr>
-                    <th>NOMBRE Y APELLIDO</th>
-                    <th>CÉDULA DE IDENTIDAD</th>
-                    <th>NÚMERO DE TELEFONO</th>
-                    <th>CÓDIGO DE HISTORIA</th>
-                    <th>OPCIONES</th>
+                    {columns && columns.map((col, index: number) => (
+                        <th key={index}>{col.header}</th>
+                    ))}
                 </tr>
             </thead>
             <tbody>
-                {tablecomponent.map((table: ITableComponent) => (
+                {dataTable && dataTable.map((table) => (
                     <tr>
-                        <td>{table.full_name}</td>
-                        <td>{table.id_number}</td>
-                        <td>{table.phone_number}</td>
-                        <td>{table.mhistory_id}</td>
-                        <td>
-                            <div className="buttons">
-
-                                <div className='add_button'>
-                                    <button>
-                                        <i className={table.add_button} />
-                                    </button>
-                                </div>
-
-                                <div className='info_button'>
-                                    <button>
-                                        <i className={table.info_button} />
-                                    </button>
-                                </div>
-
-                                <div className='edit_button'>
-                                    <button>
-                                        <i className={table.edit_button} />
-                                    </button>
-                                </div>
-
-                                <div className='delete_button'>
-                                    <button>
-                                        <i className={table.delete_button} />
-                                    </button>
-                                </div>
-                            </div>
-                        </td>
+                        {columns && columns.map((col, index: number) => (
+                            <td key={index}>
+                                {col.type == 'text' && (
+                                    <span>{col.column(table)}</span>
+                                )}
+                                {col.type == 'icon' && (
+                                    <div className="buttons">
+                                        {col.icons && col.icons?.map((ic: string, indexIcon: number) => (
+                                            <div className={`${col.className[indexIcon]}`}>
+                                                <button onClick={() => returndata(col.iconsAction[indexIcon], table)}>
+                                                    <i className={`${ic}`} />
+                                                </button>
+                                            </div>
+                                        ))
+                                        }
+                                    </div>
+                                )}
+                            </td>
+                        ))}
                     </tr>
                 ))}
             </tbody>

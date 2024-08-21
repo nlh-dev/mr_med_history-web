@@ -1,4 +1,4 @@
-import { Cards } from '../../interface/Cards'
+import { Cards } from '../../interfaces/Cards'
 import '../pages.css'
 
 
