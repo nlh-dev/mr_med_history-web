@@ -1,3 +1,4 @@
+import { TableComponent } from "../../components/tables/TableComponent";
 import "../pages.css";
 
 export const MedHistory = () => {
