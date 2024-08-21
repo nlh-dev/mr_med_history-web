@@ -3,25 +3,26 @@ import { TableComponent } from '../../components/tables/TableComponent'
 import '../pages.css'
 import './Patiens.css'
 import { dataPatients, IPatients, patientsColumns } from './Patients.data'
+import { PaginationButtons } from '../../components/UI/PaginationButtons'
 
 export const Patients = () => {
 
     const [columns, setColumns] = useState(patientsColumns);
-    const user: string = 'admin'
+    
+    // const user: string = 'admin'
 
-    useEffect(()=> {
-        if(user === 'ADMIN'){
-            const columnsFilter = patientsColumns.filter(col => col.header !== 'OPCIONES');
-            setColumns(columnsFilter);
-        }
-    },[]);
+    // useEffect(()=> {
+    //     if(user === 'ADMIN'){
+    //         const columnsFilter = patientsColumns.filter(col => col.header !== 'OPCIONES');
+    //         setColumns(columnsFilter);
+    //     }
+    // },[]);
 
-    const getDATAtABLE = (icon: string, data: IPatients) => {
+    const getDataTable = (icon: string, data: IPatients) => {
         console.log(icon);
         console.log(data);
         if(icon == 'agregar'){
-            console.log(data);
-
+            console.log(data); 
         }
     }
 
@@ -48,7 +49,8 @@ export const Patients = () => {
                         <i className="add-icon fa-solid fa-circle-plus" /> AÑADIR PACIENTE
                     </button>
                 </div>
-                <TableComponent columns={columns} dataTable={dataPatients} returndata={getDATAtABLE}/>
+                <TableComponent columns={columns} dataTable={dataPatients} returndata={getDataTable}/>
+                <PaginationButtons/>
             </div>
         </div>
     )

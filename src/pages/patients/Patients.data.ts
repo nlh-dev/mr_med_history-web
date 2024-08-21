@@ -10,7 +10,7 @@ export interface IPatients {
 export const patientsColumns: IColumns<IPatients>[] = [
     {
         header: "NOMBRE Y APELLIDO",
-        column: (data) => data.full_name.toString(),
+        column: (data) => data.full_name,
         type: "text",
         className: [''],
         iconsAction: []
@@ -40,9 +40,9 @@ export const patientsColumns: IColumns<IPatients>[] = [
         header: "OPCIONES",
         column: () => "",
         type: "icon",
-        iconsAction: ['agregar,¿', 'Info','Editar','Borrar'],
+        iconsAction: ['agregar', 'Info','Editar','Borrar'],
         icons: [
-            'fa-solid fa-file-medical',
+            'fa-solid fa-hospital-user',
             'fa-solid fa-circle-info',
             'fa-solid fa-pen-to-square',
             'fa-solid fa-trash',

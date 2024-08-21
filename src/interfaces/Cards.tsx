@@ -21,7 +21,6 @@ export const Cards = () => {
                                     <div className="card-icon">
                                         <i className={card.icon} />
                                     </div>
-
                             </div>
                         ))}
                     </div>

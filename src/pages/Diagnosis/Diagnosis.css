@@ -1,4 +1,4 @@
-.add_patients{
+.add_diagnosis{
     width: 100%;
     display: flex;
     justify-content: end;
@@ -7,7 +7,7 @@
     margin: 5px 0;
 }
 
-.add_patients input{
+.add_diagnosis input{
     background: none;
     outline: none;
     border: none;
@@ -18,12 +18,12 @@
     text-transform: uppercase;
 }
 
-.add_patients input:hover{
+.add_diagnosis input:hover{
     border-color: #1c1b6b;
 }
 
-.add_patients button{
-    width: 13rem;
+.add_diagnosis button{
+    width: 15rem;
     height: 3rem;
     display: flex;
     justify-content: center;
@@ -35,8 +35,8 @@
     cursor: pointer;
     border-radius: 15px;
     font-size: 15px;
-    margin-left: 15px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.250);
+    margin-left: 15px;
 }
 
 .add-icon{

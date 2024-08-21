@@ -17,9 +17,9 @@ export const MedHistory = () => {
         </div>
         <hr />
         <div className="input-fields">
-        <div className="search_field">
-          <input type="text" placeholder="Buscar Historia......." />
-        </div>
+          <div className="search_field">
+            <input type="text" placeholder="Buscar Historia......." />
+          </div>
         </div>
       </div>
     </div>

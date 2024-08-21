@@ -1,0 +1,26 @@
+.pagination-buttons_container{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin: 15px 0 0 0;
+    transition: 0.3s ease;
+}
+
+.pagination-buttons_container i{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pagination-buttons_container button{
+    width: 3rem;
+    height: 3rem;
+    margin-left: 8px;
+    border-style: none;
+    border-radius: 15px;
+    background-color: #1c1b6b;
+    cursor: pointer;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.250);
+}

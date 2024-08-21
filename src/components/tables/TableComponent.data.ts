@@ -1,14 +1,15 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
+
+export type TypesColumns = "text" | "icon";
+
 export interface IColumns<T> {
     header: string;
     column: (data: T) => string;
     type: TypesColumns;
-    iconsAction: string[];
+    iconsAction?: string[];
     icons?: string[];
     className: string[];
 }
-
-export type TypesColumns = "text" | "icon";
 
 export interface ITable {
     columns: IColumns<any>[];
