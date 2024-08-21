@@ -1,4 +1,6 @@
 import { TableComponent } from "../../components/tables/TableComponent";
+import { PaginationButtons } from "../../components/UI/PaginationButtons";
+import { dataMedHistory, medhistoryColumns } from "./MedHistory.data";
 import "../pages.css";
 
 export const MedHistory = () => {
@@ -22,6 +24,8 @@ export const MedHistory = () => {
             <input type="text" placeholder="Buscar Historia......." />
           </div>
         </div>
+        <TableComponent columns={medhistoryColumns} dataTable={dataMedHistory}/>
+        <PaginationButtons/>
       </div>
     </div>
   );

@@ -40,15 +40,13 @@ export const patientsColumns: IColumns<IPatients>[] = [
         header: "OPCIONES",
         column: () => "",
         type: "icon",
-        iconsAction: ['agregar', 'Info','Editar','Borrar'],
+        iconsAction: ['Info','Editar','Borrar'],
         icons: [
-            'fa-solid fa-hospital-user',
             'fa-solid fa-circle-info',
             'fa-solid fa-pen-to-square',
             'fa-solid fa-trash',
         ],
         className: [
-            'add_button',
             'info_button',
             'edit_button',
             'delete_button',

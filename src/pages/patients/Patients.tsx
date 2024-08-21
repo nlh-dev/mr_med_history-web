@@ -18,13 +18,13 @@ export const Patients = () => {
     //     }
     // },[]);
 
-    const getDataTable = (icon: string, data: IPatients) => {
-        console.log(icon);
-        console.log(data);
-        if(icon == 'agregar'){
-            console.log(data); 
-        }
-    }
+    // const getDataTable = (icon: string, data: IPatients) => {
+    //     console.log(icon);
+    //     console.log(data);
+    //     if(icon == 'agregar'){
+    //         console.log(data); 
+    //     }
+    // }
 
     return (
         <div className='pages-index'>
@@ -49,7 +49,7 @@ export const Patients = () => {
                         <i className="add-icon fa-solid fa-circle-plus" /> AÑADIR PACIENTE
                     </button>
                 </div>
-                <TableComponent columns={columns} dataTable={dataPatients} returndata={getDataTable}/>
+                <TableComponent columns={columns} dataTable={dataPatients}/>
                 <PaginationButtons/>
             </div>
         </div>

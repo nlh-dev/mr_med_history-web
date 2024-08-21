@@ -16,14 +16,14 @@ export const medhistoryColumns: IColumns<IMedHistory>[] = [
     },
     {
         header: "CÉDULA DE IDENTIDAD",
-        column: (data) => data.full_name,
+        column: (data) => data.id_number,
         type: "text",
         className: [''],
         iconsAction: [],
     },
     {
         header: "CÓDIGO DE HISTORIA",
-        column: (data) => data.full_name,
+        column: (data) => data.mhistory_id,
         type: "text",
         className: [''],
         iconsAction: [],
@@ -34,7 +34,7 @@ export const medhistoryColumns: IColumns<IMedHistory>[] = [
         type: "icon",
         iconsAction: ['ver', 'editar', 'borrar'],
         icons: [
-            'fa-solid fa-eye',
+            'fa-solid fa-circle-info',
             'fa-solid fa-pen-to-square',
             'fa-solid fa-trash',
         ],
