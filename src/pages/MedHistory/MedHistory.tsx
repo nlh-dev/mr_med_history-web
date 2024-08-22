@@ -1,6 +1,7 @@
 import { TableComponent } from "../../components/tables/TableComponent";
 import { PaginationButtons } from "../../components/UI/PaginationButtons";
 import { dataMedHistory, medhistoryColumns } from "./MedHistory.data";
+import './MedHistory.css'
 import "../pages.css";
 
 export const MedHistory = () => {
@@ -19,13 +20,16 @@ export const MedHistory = () => {
           </div>
         </div>
         <hr />
-        <div className="input-fields">
+        <div className="add_med-history">
           <div className="search_field">
             <input type="text" placeholder="Buscar Historia......." />
           </div>
+          <button>
+            <i className="add-icon fa-solid fa-circle-plus" /> AÑADIR HISTORIA
+          </button>
         </div>
-        <TableComponent columns={medhistoryColumns} dataTable={dataMedHistory}/>
-        <PaginationButtons/>
+        <TableComponent columns={medhistoryColumns} dataTable={dataMedHistory} />
+        <PaginationButtons />
       </div>
     </div>
   );

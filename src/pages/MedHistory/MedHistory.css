@@ -1,0 +1,30 @@
+.add_med-history{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    font-size: 15px;
+    margin: 5px 0;
+}
+
+.add_med-history button{
+    width: 13rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-style: none;
+    background-color: #1c1b6b;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 15px;
+    font-size: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.250);
+    margin-left: 15px;
+}
+
+.add-icon{
+    margin-right: 10px;
+    font-size: 20px;
+}

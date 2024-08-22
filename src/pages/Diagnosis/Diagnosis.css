@@ -7,7 +7,7 @@
     margin: 5px 0;
 }
 
-.add_diagnosis input{
+/* .add_diagnosis input{
     background: none;
     outline: none;
     border: none;
@@ -16,11 +16,11 @@
     font-size: 1.1rem;
     color: #333;
     text-transform: uppercase;
-}
+} */
 
-.add_diagnosis input:hover{
+/* .add_diagnosis input:hover{
     border-color: #1c1b6b;
-}
+} */
 
 .add_diagnosis button{
     width: 15rem;
