@@ -33,7 +33,7 @@ body{
 .sidebar .logo_details .ssmr_name{
     margin-left: 10px;
     font-size: 20px;
-    font-weight: 600;
+    font-weight: bold;
     transition: all 0.6s ease;
 }
 

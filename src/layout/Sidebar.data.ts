@@ -2,51 +2,50 @@ export interface ISidebar {
     title: string;
     icon: string;
     redirecTo: string;
-    tipo: string;
+    type: string;
 }
 
 export const SidebarMenu: ISidebar[] = [
     {
         title: 'Añadir Paciente',
-        redirecTo: 'añadir',
+        redirecTo: '/pacientes/añadir',
         icon: 'fa-solid fa-circle-plus',
-        tipo: 'link'
+        type: 'link'
     },
     {
         title: 'Inicio',
-        redirecTo: 'inicio',
+        redirecTo: '/inicio',
         icon: 'fa-solid fa-house',
-        tipo: 'link'
+        type: 'link'
     },
     {
         title: 'Pacientes',
-        redirecTo: 'pacientes',
+        redirecTo: '/pacientes',
         icon: 'fa-solid fa-person-half-dress',
-        tipo: 'link'
+        type: 'link'
     },
     {
         title: 'Historias Médicas',
-        redirecTo: 'historias_medicas',
+        redirecTo: '/historias_medicas',
         icon: 'fa-solid fa-book-medical',
-        tipo: 'link'
+        type: 'link'
     },
     {
         title: 'Diagnostico',
         redirecTo: 'diagnostico',
         icon: 'fa-solid fa-stethoscope',
-        tipo: 'link'
+        type: 'link'
     },
     {
         title: 'Médicos',
-        redirecTo: 'doctores',
+        redirecTo: '/doctores',
         icon: 'fa-solid fa-user-doctor',
-        tipo: 'link',
+        type: 'link',
     },
     {
         title: 'Usuarios',
         redirecTo: 'usuarios',
         icon: 'fa-solid fa-users',
-        tipo: 'link',
+        type: 'link',
     },
-
 ]

@@ -1,5 +1,5 @@
-import '../pages.css'
 import './AddRegister.css'
+import '../pages.css'
 
 export const AddRegister = () => {
 
@@ -18,6 +18,28 @@ export const AddRegister = () => {
                     </div>
                 </div>
                 <hr />
+                <form action="">
+                    <div className="add-register_form">
+                        <div className="inputs-labels">
+                            <label htmlFor="fullname" className='labels'>NOMBRE Y APELLIDO</label>
+                            <div className='inputs'>
+                            <input type="text" id='fullname' name='fullname' placeholder='inserte....'/>
+                            </div>
+                        </div>
+                        <div className="inputs-labels">
+                            <label htmlFor="fullname" className='labels'>CEDULA DE IDENTIDAD</label>
+                            <div className='inputs'>
+                            <input type="text" id='fullname' name='fullname' placeholder='inserte....'/>
+                            </div>
+                        </div>
+                        <div className="inputs-labels">
+                            <label htmlFor="fullname" className='labels'>NUMERO DE TELÉFONO</label>
+                            <div className='inputs'>
+                            <input type="text" id='fullname' name='fullname' placeholder='inserte....'/>
+                            </div>
+                        </div>
+                    </div>
+                    </form>
             </div>
         </div>
     )

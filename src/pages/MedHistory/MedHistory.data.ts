@@ -16,7 +16,7 @@ export const medhistoryColumns: IColumns<IMedHistory>[] = [
     },
     {
         header: "CÉDULA DE IDENTIDAD",
-        column: (data) => data.id_number,
+        column: (data) => data.id_number.toString(),
         type: "text",
         className: [''],
         iconsAction: [],

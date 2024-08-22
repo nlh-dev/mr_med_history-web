@@ -4,10 +4,13 @@ import '../pages.css'
 import './Patiens.css'
 import { dataPatients, IPatients, patientsColumns } from './Patients.data'
 import { PaginationButtons } from '../../components/UI/PaginationButtons'
+import { useNavigate } from 'react-router-dom'
 
 export const Patients = () => {
 
     const [columns, setColumns] = useState(patientsColumns);
+
+    const navigate = useNavigate();
     
     // const user: string = 'admin'
 
@@ -45,7 +48,7 @@ export const Patients = () => {
                     <div className='search_field'>
                         <input type="text" placeholder='Buscar Paciente.......' />
                     </div>
-                    <button>
+                    <button onClick={() => navigate('/pacientes/añadir')}>
                         <i className="add-icon fa-solid fa-circle-plus" /> AÑADIR PACIENTE
                     </button>
                 </div>

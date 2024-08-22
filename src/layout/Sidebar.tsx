@@ -19,11 +19,11 @@ export const Sidebar = () => {
                     <div className='content'>
                         {SidebarMenu && SidebarMenu.map((menu, index) => (
                             <li key={index}>
-                                {menu.tipo == 'link' && (<Link to={menu.redirecTo}>
+                                {menu.type == 'link' && (<Link to={menu.redirecTo}>
                                     <i className={menu.icon} />
                                     <span className='link_name'>{menu.title}</span>
                                 </Link>)}
-                                {menu.tipo == 'divider' && (<hr />)}
+                                {menu.type == 'divider' && (<hr />)}
                             </li>
                         ))}
                     </div>
