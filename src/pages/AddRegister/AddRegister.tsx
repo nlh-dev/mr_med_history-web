@@ -23,23 +23,31 @@ export const AddRegister = () => {
                         <div className="inputs-labels">
                             <label htmlFor="fullname" className='labels'>NOMBRE Y APELLIDO</label>
                             <div className='inputs'>
-                            <input type="text" id='fullname' name='fullname' placeholder='inserte....'/>
+                                <input type="text" id='fullname' name='fullname' placeholder='inserte....' />
                             </div>
                         </div>
                         <div className="inputs-labels">
-                            <label htmlFor="fullname" className='labels'>CEDULA DE IDENTIDAD</label>
+                            <label htmlFor="idNumber" className='labels'>CEDULA DE IDENTIDAD</label>
                             <div className='inputs'>
-                            <input type="text" id='fullname' name='fullname' placeholder='inserte....'/>
+                                <input type="text" id='idNumber' name='idNumber' placeholder='inserte....' />
                             </div>
                         </div>
                         <div className="inputs-labels">
-                            <label htmlFor="fullname" className='labels'>NUMERO DE TELÉFONO</label>
+                            <label htmlFor="phoneNumber" className='labels'>NUMERO DE TELÉFONO</label>
                             <div className='inputs'>
-                            <input type="text" id='fullname' name='fullname' placeholder='inserte....'/>
+                                <input type="text" id='phoneNumber' name='phoneNumber' placeholder='inserte....' />
                             </div>
                         </div>
                     </div>
-                    </form>
+                    <div className="action-buttons">
+                        <button id='cancel-button'>
+                            <i className="fa-solid fa-ban" /> CANCELAR
+                        </button>
+                        <button id='save-button' type='submit'>
+                            <i className="fa-solid fa-floppy-disk" /> GUARDAR
+                        </button>
+                    </div>
+                </form>
             </div>
         </div>
     )
