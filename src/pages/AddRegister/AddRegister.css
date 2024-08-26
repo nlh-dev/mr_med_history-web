@@ -63,25 +63,35 @@
     font-size: 15px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.250);
     margin-left: 15px;
+    transition: 0.3s all ease;
 }
 
 .action-buttons #save-button{
     background-color: #1c1b6b;
 }
 
+.action-buttons #save-button:hover{
+    background-color: #1d1c57;
+}
+
 .action-buttons #cancel-button{
     background-color: #C32121;
 }
 
-.action-buttons #save-button i{
+.action-buttons #cancel-button:hover{
+    background-color: #9e2d2d;
+}
+
+.action-buttons #save-button i,
+.action-buttons #cancel-button i
+{
     font-size: 20px;
     margin: 0 10px 0 0;
 }
 
-.action-buttons #cancel-button i{
-    font-size: 20px;
-    margin: 0 10px 0 0;
-}
+
+
+
 
 /* .input-fields{
     height: 45px;
